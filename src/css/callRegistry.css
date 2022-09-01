@@ -1,0 +1,72 @@
+:root {
+    --call-box-margin: 20px;
+    --call-box-corner-radius: 10px;
+    --call-box-background-color: rgb(244, 244, 244);
+}
+.call-root-div{
+    margin-top: 8px;
+}
+
+.call-date-div {
+    color: rgb(164, 164, 164);
+    font-style: italic;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.call-date {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.call-date:first-child:before {
+    content: " ----------------------------"
+}
+
+.call-date:first-child:after {
+    content: " ----------------------------"
+}
+
+.call-details-box {
+    border-radius: var(--call-box-corner-radius);
+    border: 2px rgb(196, 196, 196) solid;
+    margin-left: var(--call-box-margin);
+    margin-right: var(--call-box-margin);
+    width: calc(100% - (var(--call-box-margin) * 2));
+    background-color: var(--call-box-background-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.call-person-name-from{
+    margin-top: 2px;
+    font-weight: bold;
+}
+.call-person-name-to{
+    margin-top: 5px;
+    color: rgb(164, 164, 164);
+    font-style: italic;
+    font-size: smaller;
+}
+.vertical-menu button:hover{
+    background-color: rgb(164, 164, 164);
+}
+.call-type-image{
+    padding-top: 6px;
+}
+.call-time{
+    padding-top: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+.dropdown-menu show{
+    transform: translate3d(-120px, 40px, 0px);
+}
+.all-calls-container{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
